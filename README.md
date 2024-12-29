@@ -1,2 +1,2 @@
-# Deep-Insight-Deep-learning-project
+# Deep-Insight
  Classification of Diabetic Retinopathy using Deep learning

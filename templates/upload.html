@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload Image</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='css/main.css') }}?v=1" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Deep Insight: Unveiling Diabetic Retinopathy through Advanced Neural Networks</a>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="card mx-auto" style="max-width: 600px;">
+            <h1 class="text-center">Upload Image for Prediction</h1>
+            <form method="post" enctype="multipart/form-data" class="mt-4">
+                <div class="form-group text-center">
+                    <label class="custom-file-upload btn btn-outline-primary">
+                        <input type="file" name="file" required>
+                        Choose File
+                    </label>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Upload" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer bg-dark text-white mt-5 p-4 text-center">
+        <div class="container">
+            Deep Insight &copy; 2024
+        </div>
+    </footer>
+</body>
+
+</html>

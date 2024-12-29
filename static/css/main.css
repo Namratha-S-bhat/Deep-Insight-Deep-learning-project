@@ -1,0 +1,65 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #343a40;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #e36209; /* Using a warm color instead of blue */
+}
+
+.footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 1.5em; /* Reduced padding */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.form-group {
+    margin-bottom: 1em; /* Reduced margin */
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    color: #e36209; /* Using a warm color instead of blue */
+    border: 1px solid #e36209;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-file-upload:hover {
+    background-color: #e36209; /* Using a warm color instead of blue */
+    color: #ffffff;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+.btn-primary {
+    background-color: #e36209; /* Using a warm color instead of blue */
+    border-color: #e36209;
+    padding: 0.5em 2em;
+    font-size: 1.1em;
+}
+
+.btn-primary:hover {
+    background-color: #d35400; /* Darker shade of the warm color */
+    border-color: #c0392b; /* Another warm color for the border */
+}
